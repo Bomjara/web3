@@ -1,27 +1,28 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family:"Century Gothic", sans-serif;
+	font: 14px "Century Gothic", sans-serif;
 }
 ul { padding: 0; margin: 0; }
 li {
-	font: bold 14px "Century Gothic", sans-serif;
+	font-weight: bold;
 	list-style: none;
+	float: left;
 	text-align: center;
 }
-h3 { font: bold 21px "Century Gothic", sans-serif; }
-h1 { margin: 10px; font: 50px "Century Gothic", sans-serif; }
-p { font: 14px "Century Gothic", sans-serif; }
+h3 { font-weight: bold; font-size: 21px; margin: 0; }
+h2 { margin: 0; }
+h1 { font-size: 50px; margin: 0; }
 i { margin-right: 5px; }
 button, input {	outline: none; }
-.link {
-	text-decoration: none;
-	margin-right: 5px;
-	transition: 0.3s;
-}
+
+
+.link {	text-decoration: none;transition:  0.3s; }
 .white { color: white; }
 .black { color: black; }
 .link:hover { color: #e9b637; }
+.link:active { opacity: 0.5; }
+
 .head {
 	background: #3c3c3c;
 	height: 75px;
@@ -38,36 +39,56 @@ button, input {	outline: none; }
 	padding-left: 15px;
 	color: white;
 }
+.fa-search {
+	position: relative;
+	left: -75px;
+}
 .your-account li{
 	margin-right: 25px;
 	float: left;
 }
+
+/*------------меню------------*/
+
 .menu {
-	background: #f0f0f0;
-	height: 75px;
+	background: #e7e7e7;
 	color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .main-menu {
-	width: 475px;
-	font: bold 18px "Century Gothic", sans-serif;
+	width: 1000px;
+	line-height: 75px;
 	margin-bottom: 0px;
+	font-weight: bold; 
+	font-size: 18px;
 	display: flex;
 	justify-content: space-between;
 }
-.main-menu li { font: bold 18px "Century Gothic", sans-serif; }
+.drop-menu {
+	margin-left: -10px;
+	padding: 0 10px;
+}
+.drop-menu li { font-weight: normal; font-size: 15px;}
+.main-menu ul {
+	display: none;
+	background: white;
+}
+.main-menu li:hover > ul {
+	display: block;
+	position: absolute;
+}
 .slider {
 	background: #e9b637;
 	width: 1000px;
 	height: 400px;
 	margin: 0px auto;
-	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+	box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
 }
 .box {
 	margin: 25px 0px;
-	padding: 30px;
+	padding: 25px 0 10px 0;
 	border-top: 1px solid rgba(0,0,0,0.25);
 	display: flex;
 	justify-content: center;
@@ -108,153 +129,5 @@ ul img { transform: scale(0.8); }
 .info {
 	width: 500px;
 	margin-right: 25px;
-	font: 14px "Century Gothic", sans-serif;
-}
-.btns {
-	width: 200px;
-	height: 150px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-.btn {
-	width: 100%;
-	height: 35px;
-	background: white;
-	border: 1px solid black;
-	text-align: center;
-	cursor: pointer;
-	transition: 0.3s;
-}
-.btn:hover {
-	background: black;
-	color: #e9b637;
-}
-.logos { width: 80px; transition: 0.3s;}
-.logos:hover { opacity: 0.5 }
-.our-company {
-	background: #e7e7e7;
-	width: 580px;
-	height: 400px;
-	padding: 30px;
-	display: flex;
-	flex-direction: column;
-}
-.our-company li {
-	font: 14px "Century Gothic", sans-serif;
-	float: none;
-	width: 450px;
-	text-align: left;
-}
-.our-company li::before{
-	content: "•";
-	color: #e9b637;
-	font-size: 20px;
-	margin-left: -15px;
-}
-.contact-us {
-	background: #3c3c3c;
-	width: 300px;
-	height: 400px;
-	padding: 30px;
-	display: flex;
-	flex-direction: column;
-}
-.email {
-	height: 40px;
-	background: #515151;
-	border: 1px solid white;
-	padding-left: 15px;
-	color: white;
-	font: 15px "Century Gothic", sans-serif;
-}
-.btn-action {
-	width: 100%;
-	height: 50px;
-	background: #e9b637;
-	border: none;
-	font: 18px "Century Gothic", sans-serif;
-	cursor: pointer;
-	transition: 0.3s; 
-}
-.btn-action:hover {
-	background: white;
-	border: 1px solid #e9b637;
-	color: #e9b637;
-}
-.contact-us h3 { color: white; }
-.contact-us p { color: #777777; }
-.information {
-	background: #464646;
-	height: 250px;
-	color: white;
-	margin-top: 25px;
-	display: flex;
-	justify-content: center;
-}
-.location {	width: 450px; }
-.location ul {
-	margin-top: 40px;
-}
-.root {
-	background: #3c3c3c;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-.wrap {
-	width: 1000px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.wrap-filter {
-	width: 1000px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-}
-.social {
-	color: white;
-	display: flex;
-	align-items: center;
-}
-.number { font: bold 24px "Century Gothic", sans-serif; }
-.filter-title {
-	width: 250px;
-	height: 50px;
-	padding: 0 25px;
-	background: #3c3c3c;
-	color: white;
-}
-.filter-content {
-	width: 250px;
-	height: 400px;
-	padding: 0 25px;
-	background: #464646;
-	color: white;
-}
-.filter-menu {
-	width: 100%;
-	background: #f0f0f0;
-	height: 50px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.goods { width: 700px; }
-.good {
-	width: 200px;
-	height: 260px;
-	border: 1px solid lightgrey;
-	padding: 20px 50px;
-	margin: 20px;
-	float: left;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 

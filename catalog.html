@@ -9,12 +9,13 @@
 <body>
 
 <!--             header             -->
-<header>
+
+	<header>
 		<div class="head">
 			<div class="wrap">
-				<h1>MAGNO</h1>
+				<a href="index.html" class="link white"><h1>MAGNO</h1></a>
 				<p class="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</p>
-				<input type="text" name="search" class="search" placeholder="Поиск по сайту">
+				<input type="text" name="search" class="search" placeholder="Поиск по сайту"><i class="fa fa-search"></i>
 				<ul class="your-account">
 					<li><i class="fa fa-user"></i>Личный кабинет</li>
 					<li><i class="fa fa-shopping-cart"></i>Корзина</li>
@@ -23,37 +24,54 @@
 		</div>
 		<div class="menu">
 			<ul class="main-menu">
-					<li><a href="#" class="link black">Доставка</a></li>
-					<li><a href="#" class="link black">Гарантия</a></li>
-					<li><a href="#" class="link black">Контакты</a></li>
+				<li><a href="#" class="link black">Все категории</a>
+					<ul class="drop-menu">
+						<div class="wrap">
+							<li><a href="catalog.html" class="link black">Моноблоки и ноутбуки</a></li>
+							<li><a href="#" class="link black">Мыши</a></li>
+							<li><a href="#" class="link black">Комплектующие</a></li>
+							<li><a href="#" class="link black">Роутеры</a></li>
+							<li><a href="#" class="link black">Настольные лампы</a></li>
+							<li><a href="#" class="link black">Игровые симуляторы</a></li>
+						</div>
+					</ul>
+				</li>
+				<li><a href="#" class="link black">Доставка</a></li>
+				<li><a href="#" class="link black">Гарантия</a></li>
+				<li><a href="#" class="link black">Контакты</a></li>
 			</ul>
-		</div>
+		</div>	
+	</header>
 
 <!--             body             -->
 
 	<div class="wrap">
-	<ul>
-		<li>Главная/</li>
-		<li>Каталог/</li>
-		<li>Моноблоки и ноутбуки</li>
-	</ul>
+		<ul class="catalog-menu">
+			<li>Главная</li>
+			<li>Каталог</li>
+			<li>Моноблоки и ноутбуки</li>
+		</ul>
 	</div>
+	<div class="box">
 	<div class="wrap">
-		<h3>Моноблоки и ноутбуки</h3>
+		<h2>Моноблоки и ноутбуки</h2>
 	</div>
-	<div class="filter-menu">
+	</div>
+	<div class="filter-header">
 		<div class="wrap">
 			<div class="filter-title">
-				<h3>Фильтр</h3>
+				<h3>ФИЛЬТР</h3>
 			</div>
-			<h4>СОРТИРОВКА</h4>
-			<ul>
-				<li>По цене</li>
-				<li>По типу</li>
-				<li>По популярности</li>
+			<h3>СОРТИРОВКА</h3>
+			<ul class="filter-menu">
+				<li>по цене</li>
+				<li>по типу</li>
+				<li>по популярности</li>
 			</ul>
-			<button></button>
-			<button></button>
+			<div>
+				<button class="btn-nav"><a class="fa fa-arrow-up link black"></a></button>
+				<button class="btn-nav"><a class="fa fa-arrow-down link black"></a></button>
+			</div>
 		</div>
 	</div>
 	<div class="wrap-filter">
@@ -82,32 +100,46 @@
 		<div class="goods">
 			<div class="good">
 				<img src="images/goods/laptop-2.png">
+				<span>В наличии</span>
 				<p>Ноутбук</p>
 				<p>11020 РУБ</p>
 				<button class="btn-action">В корзину</button>
 			</div>
 			<div class="good">
 				<img src="images/goods/laptop-2.png">
+				<span>В наличии</span>
 				<p>Ноутбук</p>
 				<p>11020 РУБ</p>
 				<button class="btn-action">В корзину</button>
 			</div>
 			<div class="good">
 				<img src="images/goods/laptop-2.png">
+				<span>В наличии</span>
 				<p>Ноутбук</p>
 				<p>11020 РУБ</p>
 				<button class="btn-action">В корзину</button>
 			</div>
 		</div>
 	</div>
+	<div class="wrap">
+	<div class="page-list">
+			<button class="btn-nav">Предыдущая</button>
+			<ul>
+				<li><a href="#" class="link black"><div class="circle" id="page">1</div></a></li>
+				<li><a href="#" class="link black"><div class="circle">2</div></a></li>
+				<li><a href="#" class="link black"><div class="circle">3</div></a></li>
+			</ul>
+			<button class="btn-nav">Следующая</button>
+		</div>
+	</div>
 	
 <!--             footer             -->
 
-		<footer>
+	<footer>
 		<div class="information">
 			<div class="wrap">
 				<div class="location">
-				<h1>MAGNO</h1>
+				<a href="index.html" class="link white"><h1>MAGNO</h1></a>
 				<p>Г.МОСКВА, УЛ.СТРОИТЕЛЕЙ, 15<br>
 				К 1 ОФИС 456
 				</p>
@@ -118,7 +150,7 @@
 				</ul>
 				</div>
 				<div class="map">
-				<ul class="main-menu">
+				<ul class="footer-menu">
 					<li><a href="#" class="link white">Доставка</a></li>
 					<li><a href="#" class="link white">Гарантия</a></li>
 					<li><a href="#" class="link white">Контакты</a></li>
@@ -131,13 +163,13 @@
 			<div class="wrap">
 				<p>Все права защищены 2017</p>
 				<div class="social">
-					<a href="http://www.vk.com" class="fa fa-vk link white"></a>
-					<a href="http://www.facebook.com" class="fa fa-facebook link white"></a>
-					<a href="http://www.twitter.com" class="fa fa-twitter link white"></a>
-					<a href="http://www.instagram.com" class="fa fa-instagram link white"></a>
+					<a href="http://www.vk.com" target="_blank" class="fa fa-vk link white"></a>
+					<a href="http://www.facebook.com" target="_blank" class="fa fa-facebook link white"></a>
+					<a href="http://www.twitter.com" target="_blank" class="fa fa-twitter link white"></a>
+					<a href="http://www.instagram.com" target="_blank" class="fa fa-instagram link white"></a>
 				</div>
 			</div>
 		</div>
-		</footer>
+	</footer>
 </body>
 </html>
