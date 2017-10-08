@@ -1,4 +1,4 @@
-body {
+﻿body {
 	margin: 0;
 	padding: 0;
 	font: 14px "Century Gothic", sans-serif;
@@ -130,4 +130,225 @@ ul img { transform: scale(0.8); }
 	width: 500px;
 	margin-right: 25px;
 }
+ /*------------конпки------------*/
 
+.btns {
+	width: 200px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn {
+	width: 100%;
+	height: 35px;
+	background: white;
+	border: 1px solid black;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.3s, color 0.3s, opacity 0.1s;
+}
+.btn:hover {
+	background: black;
+	color: #e9b637;
+}
+.btn:active { opacity: 0.5; }
+.btn-nav { 
+	border: 1px solid lightgrey;
+	border-radius: 2px; 
+	background: none; 
+	color: lightgrey;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.btn-nav:hover { border: 1px solid #e9b637; color: #e9b637; }
+.btn-nav:active { opacity: 0.5; }
+.btn-action {
+	width: 100%;
+	height: 50px;
+	background: #e9b637;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	transition: 0.5s; 
+}
+.btn-action:hover {
+	background: white;
+	border: 1px solid #e9b637;
+	color: #e9b637;
+}
+.btn-action:active { opacity: 0.5; }
+
+.logos { width: 80px; transition: 0.3s;}
+.logos:hover { opacity: 0.5 }
+.our-company {
+	background: #e7e7e7;
+	width: 580px;
+	height: 400px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.our-company li {
+	float: none;
+	width: 450px;
+	text-align: left;
+	font-weight: normal;
+}
+.our-company li::before{
+	content: "•";
+	color: #e9b637;
+	font-size: 20px;
+	margin-left: -15px;
+}
+.contact-us {
+	background: #3c3c3c;
+	width: 300px;
+	height: 400px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.email {
+	height: 40px;
+	background: #515151;
+	border: 1px solid white;
+	padding-left: 15px;
+	color: white;
+}
+.contact-us h3 { color: white; }
+.contact-us p { color: #777777; }
+.information {
+	background: #464646;
+	height: 260px;
+	color: white;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+.footer-menu {
+	width: 475px;
+	margin-bottom: 0px;
+	font-weight: bold; 
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+.location {	width: 450px; }
+.location ul {
+	margin-top: 40px;
+}
+.root {
+	background: #3c3c3c;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.wrap > h2 { margin: 10px 0 -20px 0; }
+.wrap-filter {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.social {
+	width: 75px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.number { font-weight: bold; font-size: 24px; }
+.filter-title {
+	width: 250px;
+	height: 60px;
+	padding: 0 25px;
+	background: #3c3c3c;
+	color: white;
+	line-height: 60px;
+}
+.filter-content {
+	width: 250px;
+	height: 400px;
+	padding: 0 25px;
+	background: #464646;
+	color: white;
+}
+.filter-header {
+	width: 100%;
+	background: #f0f0f0;
+	height: 60px;
+}
+.goods { 
+	width: 700px; 
+	display: flex;
+	flex-wrap: wrap; 
+}
+.good {
+	width: 200px;
+	height: 270px;
+	border: 1px solid lightgrey;
+	padding: 20px 50px;
+	margin: 40px 0 0 40px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.good span {
+	width: 75px;
+	height: 25px;
+	padding: 3px 6px 0 6px;
+	text-align: center;
+	background: #709f39;
+	color: white;
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+.page-list {
+	width: 700px;
+	margin: 20px 0 10px 340px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.page-list .circle { 
+	width: 25px; 
+	height: 25px; 
+	border: 1px solid lightgrey;
+	color: lightgrey;
+	margin: 5px;
+	transition: 0.3s;
+}
+.page-list .circle:hover {
+	background: none;
+	border: 1px solid #e9b637;
+	color: #e9b637;
+}
+.page-list .btn-nav {
+	width: 115px;
+	height: 30px;
+}
+.catalog-menu {
+	margin: 16px 0 -20px 0;
+}
+.catalog-menu li {
+	color: #a5a5a5;
+	font-weight: normal;
+	margin-right: 10px;
+}
+.filter-menu li{
+	color: #a5a5a5;
+	font-weight: normal;
+	margin-right: 10px;
+}
